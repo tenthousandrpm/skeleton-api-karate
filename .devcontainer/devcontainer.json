@@ -1,0 +1,15 @@
+{
+    "name": "api-karate",
+    "image": "maven:3.9-eclipse-temurin-21",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
+    "postCreateCommand": "mvn dependency:go-offline -B",
+    "extensions": [
+        "redhat.java",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-test",
+        "ms-azuretools.vscode-docker",
+        "vscjava.vscode-java-pack"
+    ]
+}
